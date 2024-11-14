@@ -1,6 +1,6 @@
 @use "../utils/variables" as var;
 
-$fonts: var.$font-weights;
+$fonts: var.$font-weight;
 
 @each $key, $value in $fonts {
   @font-face {
