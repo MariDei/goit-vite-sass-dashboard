@@ -14,7 +14,7 @@
           type="button"
           aria-label="Close menu"
         >
-          <svg class="" width="20" height="20">
+          <svg class="menu-btn-icon" width="20" height="20">
             <use href="./src/img/icons.svg#icon-bi_x-lg-1"></use>
           </svg>
         </button>
@@ -78,28 +78,31 @@
       </nav>
     </aside>
     <header class="header">
-      <menu>
-        <ul>
-          <li>
-            <svg class="" width="" height="">
-              <use href=""></use>
-            </svg>
-          </li>
-          <li>Overview</li>
-        </ul>
-      </menu>
-      <ul>
-        <li>
-          <svg class="" width="" height="">
-            <use href=""></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="" width="" height="">
-            <use href=""></use>
-          </svg>
-        </li>
-      </ul>
+      <button
+        class="menu-btn js-menu-open"
+        type="button"
+        aria-expanded="false"
+        aria-controls="sidebar-menu"
+      >
+        <svg class="menu-btn-icon" width="24" height="24">
+          <use href="./src/img/icons.svg#icon-burgermenu"></use>
+        </svg>
+        Overview
+      </button>
+      <label class="search-field">
+        <svg class="search-icon" width="20" height="20">
+          <use href="./src/img/icons.svg#icon-bi_search"></use>
+        </svg>
+        <input
+          class="search-input"
+          type="text"
+          name="user-search"
+          placeholder="Search Something..."
+        />
+      </label>
+      <svg class="bell-icon" width="20" height="20">
+        <use href="./src/img/icons.svg#icon-bi_bell"></use>
+      </svg>
     </header>
     <main class="main">
       <section class="welcome"></section>
