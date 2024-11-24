@@ -109,7 +109,7 @@
         <h1 class="welcome-title">Hi Yaroslav,</h1>
         <p class="welcome-subtitle">Welcome into Cat CRM Dashboard</p>
         <button class="welcome-btn" type="button">
-          <svg class="welcome-btn-icon" width="" height="8">
+          <svg class="welcome-btn-icon" width="16" height="16">
             <use href="./src/img/icons.svg#icon-bi_plus"></use>
           </svg>
           Primary normal
@@ -456,9 +456,285 @@
             </div>
           </li>
         </ul>
+
+        <button class="board-btn" type="button">Show more</button>
       </section>
-      <section class="tasks"></section>
-      <section class="reporters"></section>
+      <section class="tasks">
+        <h2 class="tasks-title"><span>Tasks (5)</span> | Today</h2>
+        <ul class="tanks-list">
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Update the documentation</h3>
+              <p class="tasks-desc">
+                Dwuamish Head, Seattle, WA <time>8:47 AM</time>
+              </p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="./src/img/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">GDPR Compliance</h3>
+              <p class="tasks-desc">
+                Alki Ave SW, Seattle, WA <time>12:29 PM</time>
+              </p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="./src/img/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Export the processed files</h3>
+              <p class="tasks-desc">
+                Capitol Hill, Seattle, WA <time>12:34 AM</time>
+              </p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="./src/img/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Release v2.0.0</h3>
+              <p class="tasks-desc">Ra Ave SW, WA <time>11:19 AM</time></p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="./src/img/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Solve the issues</h3>
+              <p class="tasks-desc">Capitol Hill, LA <time>12:34 AM</time></p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="./src/img/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="reports">
+        <h2 class="reports-title"><span>Task Report</span> | Last 2 Weeks</h2>
+        <ul class="reports-list">
+          <li class="reports-item" data-status="up">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="./src/img/icons.svg#icon-oval-outline"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Ibnu Mas’ud</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="89"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 89%">Progress: 89%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="./src/img/icons.svg#icon-bi_up"></use>
+              <use href="./src/img/icons.svg#icon-bi_dash"></use>
+              <use href="./src/img/icons.svg#icon-bi_down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="dash">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="./src/img/icons.svg#icon-oval-outline"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Kelen Indah</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="48"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 48%">Progress: 48%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="./src/img/icons.svg#icon-bi_up"></use>
+              <use href="./src/img/icons.svg#icon-bi_dash"></use>
+              <use href="./src/img/icons.svg#icon-bi_down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="up">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="./src/img/icons.svg#icon-oval-outline"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Mas Indro</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="89"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 89%">Progress: 89%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="./src/img/icons.svg#icon-bi_up"></use>
+              <use href="./src/img/icons.svg#icon-bi_dash"></use>
+              <use href="./src/img/icons.svg#icon-bi_down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="dash">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="./src/img/icons.svg#icon-oval-outline"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Geo Vanni</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="48"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 48%">Progress: 48%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="./src/img/icons.svg#icon-bi_up"></use>
+              <use href="./src/img/icons.svg#icon-bi_dash"></use>
+              <use href="./src/img/icons.svg#icon-bi_down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="down">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="./src/img/icons.svg#icon-oval-outline"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Avian Rizk</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="48"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 48%">Progress: 48%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="./src/img/icons.svg#icon-bi_up"></use>
+              <use href="./src/img/icons.svg#icon-bi_dash"></use>
+              <use href="./src/img/icons.svg#icon-bi_down"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
     </main>
     <script type="module" src="./src/js/main.js"></script>
   </body>
