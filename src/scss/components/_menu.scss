@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   background-color: fn.get-color("dark-primary");
+
   @include mx.mq("lg", "max") {
     @include mx.ease("fast", transform);
     max-width: 248px;
@@ -20,18 +21,6 @@
   }
 }
 
-.menu-btn {
-}
-
-.menu-btn-icon {
-}
-
-.logo {
-}
-
-.logo-icon {
-}
-
 .menu-list {
   border-top: 1px solid;
   border-color: fn.get-color("dark-tertiatry");
@@ -39,7 +28,9 @@
 
 .menu-link {
   @extend %details;
+
   @include mx.ease("fast", color);
+
   position: relative;
   display: flex;
   align-items: center;
@@ -69,16 +60,10 @@
   }
 }
 
-.current {
-}
-
 .menu-icon {
   fill: fn.get-color("current");
 }
 
 .menu-notification {
   margin-left: auto;
-}
-
-.notification {
 }
