@@ -5,8 +5,8 @@
 @use "functions" as fn;
 
 @mixin mq($bp: sm, $type: min, $is-retina: false) {
-  @if map.has-key($breakpoints, $bp) {
-    $width: map-get($breakpoints, $bp);
+  @if map.has-key(var.$breakpoints, $bp) {
+    $width: map-get(var.$breakpoints, $bp);
 
     @if $type == max {
       $width: $width - 0.02px;
@@ -23,6 +23,8 @@
         @content;
       }
     }
+  } @else {
+    @error '',;
   }
 }
 
@@ -76,7 +78,7 @@
     @warn "The variable $ease is not defined";
   }
 
-  @if list.length($properties) > 0 {
-    transition-property: $properties;
-  }
+  // @if list.length($properties) > 0 {
+  //   transition-property: $properties;
+  // }
 }

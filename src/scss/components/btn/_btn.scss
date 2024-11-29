@@ -1,6 +1,6 @@
 //Settings
 $btn-padding-x: 12px !default;
-$btn-padding-x: 8px !default;
+$btn-padding-y: 8px !default;
 $btn-layer-min-width: 32px !default;
 $btn-layer-min-height: 32px !default;
 $btn-layer-spacing: 0px !default;
@@ -28,4 +28,4 @@ $btn-types: (
 @import "btn-base";
 
 //Button variants
-@import "types/";
+@import "types/primary";

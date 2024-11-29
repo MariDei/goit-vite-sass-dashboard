@@ -4,7 +4,7 @@
 @use "../utils/mixins" as mx;
 
 .sidebar {
-  @include mx.mg("lg", "max") {
+  @include mx.mq("lg", "max") {
     position: fixed;
     top: 0;
     left: 0;
