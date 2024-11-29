@@ -4,86 +4,763 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/sass.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SASS Tutorial template</title>
-    <script type="module" crossorigin src="/goit-vite-sass-dashboard/assets/index-875b9161.js"></script>
+    <title>Final project_SASS</title>
+    <script type="module" crossorigin src="/goit-vite-sass-dashboard/assets/index-59f321f8.js"></script>
     <link rel="stylesheet" href="/goit-vite-sass-dashboard/assets/index.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <main class="main">
-        <div class="container">
-          <a
-            class="main-logo"
-            href="https://sass-lang.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="main-logo-img"
-              src="/src/img/logo-sass.png"
-              alt="Sass logo"
-              width="360"
-              height="360"
-            />
-          </a>
-
-          <h1 class="main-title title">
-            <span>Sass</span> <br />simple starter
-            <a
-              class="main-title-link"
-              href="https://github.com/goitacademy/vite-sass-app-template"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              template
+  <body class="page">
+    <aside class="sidebar js-menu" id="sidebar-menu">
+      <nav class="menu">
+        <button
+          class="menu-btn js-menu-close"
+          type="button"
+          aria-label="Close menu"
+        >
+          <svg class="menu-btn-icon" width="20" height="20">
+            <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg-1"></use>
+          </svg>
+        </button>
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="24" height="24">
+            <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-logo"></use>
+          </svg>
+          Cat CRM
+        </a>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_columns-gap"></use>
+              </svg>
+              Overview
             </a>
-          </h1>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_person-plus"></use>
+              </svg>
+              Contacts
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_briefcase"></use>
+              </svg>
+              Companies
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_coin"></use>
+              </svg>
+              Deals
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_clipboard-check"></use>
+              </svg>
+              Document
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_envelope"></use>
+              </svg>
+              Message
+              <span class="menu-notification notification is-notify">8</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_calendar4-range"></use>
+              </svg>
+              Calendar
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link current" href="./index.html">
+              <svg class="menu-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_journal-text"></use>
+              </svg>
+              Report
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <header class="header">
+      <button
+        class="menu-btn js-menu-open"
+        type="button"
+        aria-expanded="false"
+        aria-controls="sidebar-menu"
+      >
+        <svg class="menu-btn-icon" width="24" height="24">
+          <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-burgermenu"></use>
+        </svg>
+        Overview
+      </button>
+      <label class="search-field">
+        <svg class="search-icon" width="20" height="20">
+          <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_search"></use>
+        </svg>
+        <input
+          class="search-input"
+          type="text"
+          name="user-search"
+          placeholder="Search Something..."
+        />
+      </label>
+      <button
+        class="notification-btn"
+        type="button"
+        data-notify="'true"
+        aria-label="Bell button"
+      >
+        <svg class="notification-btn-icon" width="20" height="20">
+          <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_bell"></use>
+        </svg>
+      </button>
+    </header>
+    <main class="main">
+      <section class="welcome">
+        <h1 class="welcome-title">Hi Yaroslav,</h1>
+        <p class="welcome-subtitle">Welcome into Cat CRM Dashboard</p>
+        <button class="welcome-btn" type="button">
+          <svg class="welcome-btn-icon" width="16" height="16">
+            <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"></use>
+          </svg>
+          Primary normal
+        </button>
+      </section>
+      <section class="co-workers">
+        <div class="co-workers-wrapper">
+          <h2 class="co-workers-title">
+            <span>Co-workers</span> | Marketing department
+          </h2>
+          <div class="co-workers-container">
+            <details class="co-workers-details">
+              <summary class="co-workers-data">
+                <svg class="co-workers-icon" width="16" height="16">
+                  <use
+                    class="icon-plus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
+                  ></use>
+                  <use
+                    class="icon-minus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
+                  ></use>
+                </svg>
+                <div class="co-workers-bio">
+                  <div class="thumb">
+                    <img
+                      src="./src/img/avatar_1.svg  "
+                      alt="avatar_1"
+                      width="42"
+                      height="63"
+                    />
+                  </div>
+                  <p class="co-workers-caption">Andrew Mike</p>
+                  <button class="controls-btn" type="button">
+                    <svg
+                      class="controls-btn-icon success"
+                      width="20"
+                      height="20"
+                    >
+                      <use
+                        href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_arrow-clockwise"
+                      ></use>
+                    </svg>
+                  </button>
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon-error" width="20" height="20">
+                      <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </summary>
+              <div class="co-workers-info">
+                <h3 class="co-workers-position">Job position</h3>
+                <p>Develop</p>
+                <h3 class="co-workers-accept">Since</h3>
+                <p>2013</p>
+              </div>
+            </details>
+            <details class="co-workers-details">
+              <summary class="co-workers-data">
+                <svg class="co-workers-icon" width="16" height="16">
+                  <use
+                    class="icon-plus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
+                  ></use>
+                  <use
+                    class="icon-minus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
+                  ></use>
+                </svg>
+                <div class="co-workers-bio">
+                  <div class="thumb">
+                    <img
+                      src="./src/img/avatar_1.svg  "
+                      alt="avatar_1"
+                      width="42"
+                      height="63"
+                    />
+                  </div>
+                  <p class="co-workers-caption">Andrew Mike</p>
+                  <button class="controls-btn" type="button">
+                    <svg
+                      class="controls-btn-icon success"
+                      width="20"
+                      height="20"
+                    >
+                      <use
+                        href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_arrow-clockwise"
+                      ></use>
+                    </svg>
+                  </button>
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon-error" width="20" height="20">
+                      <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </summary>
+              <div class="co-workers-info">
+                <h3 class="co-workers-position">Job position</h3>
+                <p>Develop</p>
+                <h3 class="co-workers-accept">Since</h3>
+                <p>2013</p>
+              </div>
+            </details>
+            <details class="co-workers-details">
+              <summary class="co-workers-data">
+                <svg class="co-workers-icon" width="16" height="16">
+                  <use
+                    class="icon-plus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
+                  ></use>
+                  <use
+                    class="icon-minus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
+                  ></use>
+                </svg>
+                <div class="co-workers-bio">
+                  <div class="thumb">
+                    <img
+                      src="./src/img/avatar_1.svg  "
+                      alt="avatar_1"
+                      width="42"
+                      height="63"
+                    />
+                  </div>
+                  <p class="co-workers-caption">Andrew Mike</p>
+                  <button class="controls-btn" type="button">
+                    <svg
+                      class="controls-btn-icon success"
+                      width="20"
+                      height="20"
+                    >
+                      <use
+                        href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_arrow-clockwise"
+                      ></use>
+                    </svg>
+                  </button>
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon-error" width="20" height="20">
+                      <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </summary>
+              <div class="co-workers-info">
+                <h3 class="co-workers-position">Job position</h3>
+                <p>Develop</p>
+                <h3 class="co-workers-accept">Since</h3>
+                <p>2013</p>
+              </div>
+            </details>
+            <details class="co-workers-details">
+              <summary class="co-workers-data">
+                <svg class="co-workers-icon" width="16" height="16">
+                  <use
+                    class="icon-plus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
+                  ></use>
+                  <use
+                    class="icon-minus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
+                  ></use>
+                </svg>
+                <div class="co-workers-bio">
+                  <div class="thumb">
+                    <img
+                      src="./src/img/avatar_1.svg  "
+                      alt="avatar_1"
+                      width="42"
+                      height="63"
+                    />
+                  </div>
+                  <p class="co-workers-caption">Andrew Mike</p>
+                  <button class="controls-btn" type="button">
+                    <svg
+                      class="controls-btn-icon success"
+                      width="20"
+                      height="20"
+                    >
+                      <use
+                        href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_arrow-clockwise"
+                      ></use>
+                    </svg>
+                  </button>
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon-error" width="20" height="20">
+                      <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </summary>
+              <div class="co-workers-info">
+                <h3 class="co-workers-position">Job position</h3>
+                <p>Develop</p>
+                <h3 class="co-workers-accept">Since</h3>
+                <p>2013</p>
+              </div>
+            </details>
+            <details class="co-workers-details">
+              <summary class="co-workers-data">
+                <svg class="co-workers-icon" width="16" height="16">
+                  <use
+                    class="icon-plus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
+                  ></use>
+                  <use
+                    class="icon-minus"
+                    href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
+                  ></use>
+                </svg>
+                <div class="co-workers-bio">
+                  <div class="thumb">
+                    <img
+                      src="./src/img/avatar_1.svg  "
+                      alt="avatar_1"
+                      width="42"
+                      height="63"
+                    />
+                  </div>
+                  <p class="co-workers-caption">Andrew Mike</p>
+                  <button class="controls-btn" type="button">
+                    <svg
+                      class="controls-btn-icon success"
+                      width="20"
+                      height="20"
+                    >
+                      <use
+                        href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_arrow-clockwise"
+                      ></use>
+                    </svg>
+                  </button>
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon-error" width="20" height="20">
+                      <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
+                    </svg>
+                  </button>
+                </div>
+              </summary>
+              <div class="co-workers-info">
+                <h3 class="co-workers-position">Job position</h3>
+                <p>Develop</p>
+                <h3 class="co-workers-accept">Since</h3>
+                <p>2013</p>
+              </div>
+            </details>
 
-          <ul class="main-badges badges">
-            <li class="badges-item">
-              <a class="badges-link" href="https://vitejs.dev/" target="_blank">Vite</a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://elad2412.github.io/the-new-css-reset/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The New CSS Reset
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/autoprefixer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Autoprefixer
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/postcss-sort-media-queries"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                postcss-sort-media-queries
-              </a>
-            </li>
-          </ul>
+            <table class="co-workers-table">
+              <caption class="visually-hidden">
+                <span>Co-workers</span>
+                | Marketing department
+              </caption>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Job position</th>
+                  <th>Since</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="thumb">
+                      <img
+                        src="/goit-vite-sass-dashboard/assets/avatar_1.svg"
+                        alt="avatar_1"
+                        width="42"
+                        height="63"
+                      />
+                    </div>
+                  </td>
+                  <td>Andrew Mike</td>
+                  <td>Develop</td>
+                  <td>2013</td>
+                  <td>
+                    <button class="controls-btn" type="button">
+                      <svg
+                        class="controls-btn-icon success"
+                        width="20"
+                        height="20"
+                      >
+                        <use
+                          href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_arrow-clockwise"
+                        ></use>
+                      </svg>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="controls-btn" type="button">
+                      <svg
+                        class="controls-btn-icon-error"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          Made with ❤ by
-          <a href="https://goit.global/ua/" target="_blank" rel="noopener noreferrer"> GoIT </a>
-        </div>
-      </footer>
-    </div>
 
+        <ul class="co-workers-board board">
+          <li class="board-item">
+            <div class="board-info">
+              <h3 class="board-caption">Send benefit review by Sunday</h3>
+              <p class="board-text">Due date: December 23, 2023</p>
+              <div class="board-person-info">
+                <img
+                  src="/goit-vite-sass-dashboard/assets/avatar_1.svg"
+                  alt="avatar_1"
+                  width="42"
+                  height="63"
+                />
+                <p class="person-name">George Fields</p>
+              </div>
+            </div>
+            <div class="board-badges">
+              <p class="badges-name">Reminder</p>
+              <p class="badges-status">Completed</p>
+            </div>
+          </li>
+          <li class="board-item">
+            <div class="board-info">
+              <h3 class="board-caption">Send benefit review by Sunday</h3>
+              <p class="board-text">Due date: December 23, 2023</p>
+              <div class="board-person-info">
+                <img
+                  src="/goit-vite-sass-dashboard/assets/avatar_2.svg"
+                  alt="avatar_2"
+                  width="42"
+                  height="63"
+                />
+                <p class="person-name">Amanda Pitt</p>
+              </div>
+            </div>
+            <div class="board-badges">
+              <p class="badges-name">Call</p>
+              <p class="badges-status">Ended</p>
+            </div>
+          </li>
+        </ul>
+
+        <button class="board-btn" type="button">Show more</button>
+      </section>
+      <section class="tasks">
+        <h2 class="tasks-title"><span>Tasks (5)</span> | Today</h2>
+        <ul class="tanks-list">
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Update the documentation</h3>
+              <p class="tasks-desc">
+                Dwuamish Head, Seattle, WA <time>8:47 AM</time>
+              </p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">GDPR Compliance</h3>
+              <p class="tasks-desc">
+                Alki Ave SW, Seattle, WA <time>12:29 PM</time>
+              </p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Export the processed files</h3>
+              <p class="tasks-desc">
+                Capitol Hill, Seattle, WA <time>12:34 AM</time>
+              </p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Release v2.0.0</h3>
+              <p class="tasks-desc">Ra Ave SW, WA <time>11:19 AM</time></p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input
+                class="tasks-input visually-hidden"
+                type="checkbox"
+                name="task-status"
+                value="unfinished"
+              />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_check2"></use>
+              </svg>
+            </label>
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Solve the issues</h3>
+              <p class="tasks-desc">Capitol Hill, LA <time>12:34 AM</time></p>
+              <button class="tasks-btn" type="button">
+                <svg class="tasks-btn-icon" width="20" height="20">
+                  <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_gear"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="reports">
+        <h2 class="reports-title"><span>Task Report</span> | Last 2 Weeks</h2>
+        <ul class="reports-list">
+          <li class="reports-item" data-status="up">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="/goit-vite-sass-dashboard/assets/icon-oval-outline.svg"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Ibnu Mas’ud</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="89"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 89%">Progress: 89%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-up"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-dash"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="dash">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="/goit-vite-sass-dashboard/assets/icon-oval-outline.svg"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Kelen Indah</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="48"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 48%">Progress: 48%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-up"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-dash"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="up">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="/goit-vite-sass-dashboard/assets/icon-oval-outline.svg"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Mas Indro</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="89"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 89%">Progress: 89%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-up"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-dash"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="dash">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="/goit-vite-sass-dashboard/assets/icon-oval-outline.svg"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Geo Vanni</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="48"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 48%">Progress: 48%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-up"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-dash"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-down"></use>
+            </svg>
+          </li>
+          <li class="reports-item" data-status="down">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-trumb">
+                <img
+                  class="co-workers-avatar"
+                  src="/goit-vite-sass-dashboard/assets/icon-oval-outline.svg"
+                  alt="avatars"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <h3 class="co-workers-caption">Avian Rizk</h3>
+            </div>
+            <progress
+              class="progress-bar"
+              id="report-ibnu"
+              max="100"
+              value="48"
+            >
+              <!-- For older browser, which doesn't support <progress> styles -->
+              <div class="progress-bar">
+                <span style="width: 48%">Progress: 48%</span>
+              </div>
+            </progress>
+            <svg class="report-ststus" width="20" height="20">
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-up"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-dash"></use>
+              <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-down"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </main>
     
   </body>
 </html>
