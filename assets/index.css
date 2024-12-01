@@ -172,6 +172,13 @@ meter {
   letter-spacing: 0.02em;
 }
 
+.page-title-accent {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.025em;
+}
+
 .logo {
   font-size: 16px;
   font-weight: 500;
@@ -243,32 +250,6 @@ summary {
   min-width: 375px;
 }
 
-.welcome {
-  grid-area: welcome;
-}
-
-.welcome-btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.co-workers {
-  grid-area: co-workers;
-}
-
-.co-workers-btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.tasks {
-  grid-area: tasks;
-}
-
-.reports {
-  grid-area: reports;
-}
-
 .btn {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -278,7 +259,7 @@ summary {
   -webkit-align-items: center;
      -moz-box-align: center;
           align-items: center;
-  gap: 0px;
+  gap: 4px;
   min-width: 32px;
   min-height: 32px;
   padding: 8px 12px;
@@ -322,6 +303,48 @@ summary {
 }
 .btn--primary[disabled] {
   background-color: #b5b5be;
+}
+
+.welcome {
+  grid-area: welcome;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+          align-items: flex-end;
+  row-gap: 16px;
+}
+
+.page-title-accent {
+  display: block;
+  margin-bottom: 8px;
+  color: #fafafb;
+}
+
+.co-workers {
+  grid-area: co-workers;
+}
+
+.co-workers-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.tasks {
+  grid-area: tasks;
+}
+
+.reports {
+  grid-area: reports;
 }
 
 .menu {
@@ -561,6 +584,9 @@ summary {
   }
   .sidebar {
     grid-area: sidebar;
+  }
+  .page-title-accent {
+    margin-bottom: 16px;
   }
   .logo {
     padding: 16px 20px;
