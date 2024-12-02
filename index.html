@@ -152,11 +152,11 @@
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
                   <use
-                    class="icon-plus"
+                    class="plus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
                   ></use>
                   <use
-                    class="icon-minus"
+                    class="minus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
                   ></use>
                 </svg>
@@ -182,7 +182,7 @@
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
-                    <svg class="controls-btn-icon-error" width="20" height="20">
+                    <svg class="controls-btn-icon error" width="20" height="20">
                       <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
                     </svg>
                   </button>
@@ -199,11 +199,11 @@
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
                   <use
-                    class="icon-plus"
+                    class="plus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
                   ></use>
                   <use
-                    class="icon-minus"
+                    class="minus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
                   ></use>
                 </svg>
@@ -229,7 +229,7 @@
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
-                    <svg class="controls-btn-icon-error" width="20" height="20">
+                    <svg class="controls-btn-icon error" width="20" height="20">
                       <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
                     </svg>
                   </button>
@@ -246,11 +246,11 @@
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
                   <use
-                    class="icon-plus"
+                    class="plus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
                   ></use>
                   <use
-                    class="icon-minus"
+                    class="minus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
                   ></use>
                 </svg>
@@ -276,7 +276,7 @@
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
-                    <svg class="controls-btn-icon-error" width="20" height="20">
+                    <svg class="controls-btn-icon error" width="20" height="20">
                       <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
                     </svg>
                   </button>
@@ -293,11 +293,11 @@
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
                   <use
-                    class="icon-plus"
+                    class="plus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
                   ></use>
                   <use
-                    class="icon-minus"
+                    class="minus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
                   ></use>
                 </svg>
@@ -323,7 +323,7 @@
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
-                    <svg class="controls-btn-icon-error" width="20" height="20">
+                    <svg class="controls-btn-icon error" width="20" height="20">
                       <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
                     </svg>
                   </button>
@@ -340,11 +340,11 @@
               <summary class="co-workers-data">
                 <svg class="co-workers-icon" width="16" height="16">
                   <use
-                    class="icon-plus"
+                    class="plus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_plus"
                   ></use>
                   <use
-                    class="icon-minus"
+                    class="minus"
                     href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_dash"
                   ></use>
                 </svg>
@@ -370,7 +370,7 @@
                     </svg>
                   </button>
                   <button class="controls-btn" type="button">
-                    <svg class="controls-btn-icon-error" width="20" height="20">
+                    <svg class="controls-btn-icon error" width="20" height="20">
                       <use href="/goit-vite-sass-dashboard/assets/icons.svg#icon-bi_x-lg"></use>
                     </svg>
                   </button>
@@ -445,17 +445,22 @@
 
         <ul class="co-workers-board board">
           <li class="board-item">
-            <div class="board-info">
+            <div class="board-left">
               <h3 class="board-caption">Send benefit review by Sunday</h3>
-              <p class="board-text">Due date: December 23, 2023</p>
-              <div class="board-person-info">
-                <img
-                  src="/goit-vite-sass-dashboard/assets/avatar_1.svg"
-                  alt="avatar_1"
-                  width="42"
-                  height="63"
-                />
-                <p class="person-name">George Fields</p>
+              <p class="board-details">
+                Due date: <time>December 23, 2023</time>
+              </p>
+              <div class="board-coworker person">
+                <div>
+                  <img
+                    class="person-avatar"
+                    src="/goit-vite-sass-dashboard/assets/avatar_1.svg"
+                    alt="avatar_1"
+                    width="42"
+                    height="63"
+                  />
+                </div>
+                <p class="person-caption">George Fields</p>
               </div>
             </div>
             <div class="board-badges">
@@ -464,17 +469,20 @@
             </div>
           </li>
           <li class="board-item">
-            <div class="board-info">
+            <div class="board-right">
               <h3 class="board-caption">Send benefit review by Sunday</h3>
-              <p class="board-text">Due date: December 23, 2023</p>
-              <div class="board-person-info">
+              <p class="board-details">
+                Due date: <time>December 23, 2023</time>
+              </p>
+              <div class="board-coworker person">
                 <img
+                  class="person-avatar"
                   src="/goit-vite-sass-dashboard/assets/avatar_2.svg"
                   alt="avatar_2"
                   width="42"
                   height="63"
                 />
-                <p class="person-name">Amanda Pitt</p>
+                <p class="person-caption">Amanda Pitt</p>
               </div>
             </div>
             <div class="board-badges">
@@ -484,7 +492,9 @@
           </li>
         </ul>
 
-        <button class="board-btn" type="button">Show more</button>
+        <button class="co-workers-btn btn btn--secondary" type="button">
+          <span class="btn-inner">Show more</span>
+        </button>
       </section>
       <section class="tasks">
         <h2 class="tasks-title"><span>Tasks (5)</span> | Today</h2>
