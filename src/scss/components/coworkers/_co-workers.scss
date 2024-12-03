@@ -32,6 +32,7 @@
   @extend %details;
 
   margin-bottom: 28px;
+  text-align: left;
 
   @include mx.mq("xl") {
     margin-bottom: 36px;
