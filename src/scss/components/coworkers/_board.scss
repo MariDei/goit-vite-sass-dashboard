@@ -26,9 +26,6 @@
   }
 }
 
-.board-left {
-}
-
 .board-caption {
   @extend %accent-text;
   margin-bottom: 8px;
@@ -41,9 +38,6 @@
   color: fn.get-color("light-secondary");
 }
 
-.board-coworker {
-}
-
 .person {
   display: flex;
   align-items: center;
@@ -52,9 +46,6 @@
 
 .person-thumb {
   @include mx.frame(24px, $is-circle: true);
-}
-
-.person-avatar {
 }
 
 .person-caption {
