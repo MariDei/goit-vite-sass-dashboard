@@ -83,7 +83,7 @@
 .tasks-heading {
   @extend %details;
 
-  color: fn.get-color("light");
+  color: fn.get-color("light-primary");
 }
 
 .tasks-desc {
