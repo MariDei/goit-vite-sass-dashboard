@@ -505,7 +505,12 @@ summary {
      object-position: top center;
 }
 
+.co-workers-caption {
+  width: 98px;
+}
+
 .co-workers-controls {
+  padding-left: 93px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -763,7 +768,7 @@ summary {
   border-color: #92929d;
 }
 
-.tasks-checkbox-icon {
+.tasks-checkbox {
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
   display: -webkit-box;
@@ -807,6 +812,7 @@ summary {
 }
 
 .tasks-info {
+  width: 276px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -815,7 +821,21 @@ summary {
   -webkit-align-items: center;
      -moz-box-align: center;
           align-items: center;
-  gap: 15px;
+  gap: 31px;
+}
+
+.tasks-left {
+  width: 208px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
 }
 
 .tasks-heading {
