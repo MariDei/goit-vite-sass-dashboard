@@ -34,7 +34,6 @@
     th {
       @extend %details-accent;
 
-      position: relative;
       padding: 12px 20px;
       border-bottom-width: 1px;
       color: fn.get-color("light-primary");
