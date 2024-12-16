@@ -179,16 +179,16 @@ meter {
   letter-spacing: 0.025em;
 }
 
-.logo {
+body {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
 .reports-title span, .tasks-title span, .board-caption, .co-workers-table caption span, .co-workers-title span {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
@@ -196,15 +196,15 @@ meter {
 .search-input, .menu-btn, .menu-link, .reports-title, .staff-caption, .tasks-title, .tasks-heading, .tasks-desc, .board-details, .person-caption, .board-tag, .co-workers-table caption, .co-workers-table tbody, .co-workers-details, .co-workers-title {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.42;
-  letter-spacing: 0.036em;
+  line-height: 1.43;
+  letter-spacing: 0.04em;
 }
 
 .badge-danger, .badge-warning, .badge-success, .co-workers-table thead th, .co-workers-position {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.42;
-  letter-spacing: 0.036em;
+  letter-spacing: 0.04em;
 }
 
 .reports, .tasks, .board-item {
@@ -368,7 +368,7 @@ summary {
   max-height: 296px;
   overflow-y: auto;
 }
-.co-workers-container::-webkit-scrollbar-button {
+.co-workers-container::-webkit-scrollbar {
   width: 14px;
 }
 .co-workers-container::-webkit-scrollbar-track {
@@ -732,7 +732,7 @@ summary {
   max-height: 288px;
   overflow: auto;
 }
-.tasks-list::-webkit-scrollbar-button {
+.tasks-list::-webkit-scrollbar {
   width: 14px;
 }
 .tasks-list::-webkit-scrollbar-track {
