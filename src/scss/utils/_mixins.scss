@@ -24,7 +24,7 @@
       }
     }
   } @else {
-    @error '',;
+    @error '';
   }
 }
 
@@ -44,7 +44,7 @@
 }
 
 @mixin scroll-bar {
-  &::-webkit-scrollbar-button {
+  &::-webkit-scrollbar {
     width: 14px;
   }
 
