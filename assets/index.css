@@ -942,7 +942,7 @@ summary {
   background-color: #f07f2e;
   border-radius: 50%;
 }
-.notification-btn[data-notify=true] {
+.notification-btn[data-notify=true]::after {
   background-color: #fc5a5a;
 }
 
