@@ -28,7 +28,7 @@
     border-radius: 50%;
   }
 
-  &[data-notify="true"] {
+  &[data-notify="true"]::after {
     background-color: fn.get-color("danger");
   }
 }
