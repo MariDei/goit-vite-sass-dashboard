@@ -17,8 +17,8 @@
   max-height: 388px;
   padding: 16px;
   margin-bottom: 40px;
-  border-radius: 12px;
   background-color: fn.get-color("dark-tertiary");
+  border-radius: 12px;
 
   @include mx.mq("xl") {
     max-height: 400px;
