@@ -410,28 +410,23 @@ summary {
   object-position: top center;
 }
 
-.co-workers-caption {
-  width: 98px;
-}
-
 .co-workers-controls {
-  padding-left: 93px;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
 .controls-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 20px;
   height: 20px;
 }
-.controls-btn-icon.success {
+.controls-btn-icon .success {
   fill: #82c43c;
 }
-.controls-btn-icon.error {
+.controls-btn-icon .error {
   fill: #fc5a5a;
 }
 
