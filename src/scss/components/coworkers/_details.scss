@@ -74,30 +74,30 @@
   }
 }
 
-.co-workers-caption {
-  width: 98px;
-}
+// .co-workers-caption {
+//   width: 98px;
+// }
 
 .co-workers-controls {
-  padding-left: 93px;
+  // padding-left: 93px;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
 .controls-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 20px;
   height: 20px;
 
   &-icon {
-    &.success {
+    .success {
       fill: fn.get-color("success");
     }
 
-    &.error {
+    .error {
       fill: fn.get-color("danger");
     }
   }
