@@ -33,7 +33,7 @@
 
     th {
       @extend %details-accent;
-
+      position: relative;
       padding: 12px 20px;
       border-bottom-width: 1px;
       color: fn.get-color("light-primary");
@@ -85,6 +85,13 @@
         }
       }
     }
+  }
+
+  .controls-btn {
+    margin: 0 16px 0 0;
+    display: inline-flex;
+    align-items: flex-start;
+    row-gap: 16px;
   }
 
   .thumb {
