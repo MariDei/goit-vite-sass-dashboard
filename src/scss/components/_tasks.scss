@@ -77,17 +77,18 @@
 }
 
 .tasks-info {
-  width: 276px;
-  display: flex;
-  align-items: center;
-  gap: 31px;
+  flex-grow: 1;
+  // width: 275px;
+  // display: flex;
+  // align-items: center;
+  // gap: 31px;
 }
 
-.tasks-left {
-  width: 208px;
-  display: flex;
-  flex-direction: column;
-}
+// .tasks-left {
+//   width: 208px;
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .tasks-heading {
   @extend %details;
