@@ -159,14 +159,14 @@ meter {
   letter-spacing: 0.025em;
 }
 
-body {
+.location-text, body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
-.reports-title span, .tasks-title span, .board-caption, .co-workers-table caption span, .co-workers-title span {
+.caption-text, .reports-title span, .tasks-title span, .board-caption, .co-workers-table caption span, .co-workers-title span {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -977,6 +977,52 @@ summary {
   color: #fafafb;
   border-radius: 20px;
   background-color: #82c43c;
+}
+
+.companies-item {
+  min-width: 343px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #292932;
+  border-radius: 24px;
+}
+
+.companies-caption {
+  display: flex;
+  width: 295px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caption-text {
+  margin-bottom: 8px;
+  color: #fafafb;
+}
+
+.companies-location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.location-text {
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.companies-btn {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 4px;
+  color: #f07f2e;
+  background-color: #292932;
+  border-radius: 12px;
+  border: 1px solid #f07f2e;
 }
 
 @media only screen and (min-width: 768px) {
