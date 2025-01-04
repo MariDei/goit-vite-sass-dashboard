@@ -979,8 +979,14 @@ summary {
   background-color: #82c43c;
 }
 
+.companies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .companies-item {
-  min-width: 343px;
+  width: 343px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -1025,6 +1031,16 @@ summary {
   border: 1px solid #f07f2e;
 }
 
+@media only screen and (lg-width: 768px) {
+  .companies-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     gap: 36px;
@@ -1037,6 +1053,9 @@ summary {
   }
   .reports-item {
     gap: 32px;
+  }
+  .companies-item {
+    width: 338px;
   }
 }
 
