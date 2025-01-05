@@ -8,17 +8,23 @@
   flex-direction: column;
   gap: 20px;
 
-  @include mx.mq("md", "lg") {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 20px;
+  @include mx.mq("md") {
+    display: grid;
+    grid-template-columns: repeat(2, 338px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  @include mx.mq("lg") {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }
 
 .companies-item {
-  width: 343px;
+  max-width: 343px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -27,7 +33,11 @@
   border-radius: 24px;
 
   @include mx.mq("md") {
-    width: 338px;
+    max-width: 338px;
+  }
+
+  @include mx.mq("lg") {
+    max-width: 360px;
   }
 }
 
