@@ -986,7 +986,7 @@ summary {
 }
 
 .companies-item {
-  width: 343px;
+  max-width: 343px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -1031,16 +1031,6 @@ summary {
   border: 1px solid #f07f2e;
 }
 
-@media only screen and (lg-width: 768px) {
-  .companies-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 20px;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .main {
     gap: 36px;
@@ -1054,8 +1044,14 @@ summary {
   .reports-item {
     gap: 32px;
   }
+  .companies-list {
+    display: grid;
+    grid-template-columns: repeat(2, 338px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
   .companies-item {
-    width: 338px;
+    max-width: 338px;
   }
 }
 
@@ -1099,6 +1095,15 @@ summary {
   }
   .search-field {
     margin-right: auto;
+  }
+  .companies-list {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .companies-item {
+    max-width: 360px;
   }
 }
 
