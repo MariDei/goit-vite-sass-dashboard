@@ -983,12 +983,13 @@ summary {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 460px;
 }
 
 .companies-item {
-  max-width: 343px;
+  min-width: 343px;
   padding: 24px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: #292932;
@@ -1051,7 +1052,7 @@ summary {
     grid-row-gap: 20px;
   }
   .companies-item {
-    max-width: 338px;
+    min-width: 338px;
   }
 }
 
@@ -1096,15 +1097,6 @@ summary {
   .search-field {
     margin-right: auto;
   }
-  .companies-list {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
-  .companies-item {
-    max-width: 360px;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1133,6 +1125,15 @@ summary {
   }
   .board-item {
     background-color: #1c1c24;
+  }
+  .companies-list {
+    grid-template-columns: repeat(3, 360px);
+  }
+  .companies-item {
+    min-width: 360px;
+  }
+  .icon {
+    margin: 0 -24px 0 0;
   }
 }
 
