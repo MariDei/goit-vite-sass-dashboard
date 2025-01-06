@@ -83,4 +83,11 @@
   background-color: fn.get-color("dark-tertiary");
   border-radius: 12px;
   border: 1px solid fn.get-color("accent-primary");
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      color: fn.get-color("light");
+    }
+  }
 }
