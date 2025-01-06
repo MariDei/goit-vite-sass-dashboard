@@ -1194,4 +1194,7 @@ summary {
     background-color: #f15c27;
     box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
   }
+  .companies-btn:hover, .companies-btn:focus {
+    color: #fff;
+  }
 }
